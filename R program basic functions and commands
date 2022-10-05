@@ -1,0 +1,24 @@
+ggplot(data=penguins,aes(x=flipper_length_mm,y=body_mass_g,(color=species, color=purple))) +geom_plot()
+
+as_tibble(penguins)
+
+read_csv("quarter_earnings.csv")
+penguins %>%
+  rename(island_new=island)
+  rename_with(penguins,toupper)
+  
+quartet%>%
+  group_by(set)%>%
+  summarize(mean(x),sd(x),mean(y),sd(y),cor(y))
+  ggplot(data=penguins)+geom_point(mapping-aes(x=flipper_length_mm,y=body_mass_g))+facet_wrap(~species)
+  
+  pdf(file="/users/username/desktop/example.pdf",
+    width=4
+    height=10)
+    plot(x=1:10)
+    abline(v=0)
+    text(x=0,y=1,tables="Random text"
+    dev.off)
+    
+  (x=flipper_length_mm,y=body_mass_g, color=species)+labs(title="Palmer penguins: Body Mass vs. Flipper Length")
+ 
